@@ -5,7 +5,8 @@
 
 body {
     margin: 0px;
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: #1E1E24;
 }
 header, section {
     padding: 20px;
@@ -13,9 +14,78 @@ header, section {
 p, li {
     line-height: 1.5em;
 }
+h2 {
+    margin: 0px;
+    height: 110px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
+html{
+    width:100%;
+    height:100%;
+}
+body{
+    width:100%;
+    height:100%;
+}
+section {
+    /* border: solid 1px #000; */
+    min-height: 100vh;
+}
+
+h2 {
+    margin: 0px;
+    height: 110px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#tutorials {
+    color: white;
+    background-color: #fb9f89;
+}
+#homework {
+    color: white;
+    background-color: #22333b;
+}
+#In-class {
+    color: white;
+    background-color: #3F826D;
+}
 #inspiration {
-    background-color: #F0F0F0;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    background-color: #C9E4CA;
+
+}
+
+#inspiration a, 
+#inspiration a:link,
+#inspiration a:hover, 
+#inspiration a:visited,
+#In-class a, 
+#In-class a:link,
+#In-class a:hover, 
+#In-classa:visited,
+#tutorials a, 
+#tutorials a:link,
+#tutorials a:hover, 
+#tutorials a:visited
+{
+    color: white;
+}
+
+#inspiration a, 
+#inspiration a:link,
+#inspiration a:hover, 
+#inspiration a:visited{
+    color: black;
 }
