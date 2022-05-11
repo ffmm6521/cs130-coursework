@@ -66,7 +66,7 @@ h2 {
     background-color: #C9E4CA;
 
 }
-
+#homework a:visited,
 #inspiration a, 
 #inspiration a:link,
 #inspiration a:hover, 
@@ -74,7 +74,7 @@ h2 {
 #In-class a, 
 #In-class a:link,
 #In-class a:hover, 
-#In-classa:visited,
+#In-class a:visited,
 #tutorials a, 
 #tutorials a:link,
 #tutorials a:hover, 
