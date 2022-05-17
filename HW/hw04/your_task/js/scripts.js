@@ -90,12 +90,12 @@ const getArtist = (term) => {
 
             document.querySelector('#artist').innerHTML += `
             <section id="artist">
-                    <section class="artist-card" id="3Nrfpe0tUJi4K4DXYWgMUX">
+                    <section class="artist-card" id= ${cards[0].id}>
                         <div>
                             <img src=${cards[0].image_url}>
-                            <h2>BTS</h2>
+                            <h2>${cards[0].name}</h2>
                             <div class="footer">
-                                <a href="https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX" target="_blank">
+                                <a href="https://open.spotify.com/artist/${cards[0].id}"  target="_blank">
                                     view on spotify
                                 </a>
                             </div>
