@@ -75,7 +75,7 @@ const getArtist = (term) => {
         "${term}" and load the first artist into the #artist section 
         of the DOM...`);
 
-        document.querySelector('#artist').innerHTML = '';
+    document.querySelector('#artist').innerHTML = '';
         //this code fetches tracks based on search terms and print to the console 
     fetch('https://www.apitutor.org/spotify/simple/v1/search?type=artist&limit=1&q=' + term)
     .then(response => response.json())
