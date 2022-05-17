@@ -65,40 +65,7 @@ const getAlbums = (term) => {
         get albums from spotify based on the search term
         "${term}" and load them into the #albums section 
         of the DOM...`);
-        document.querySelector('#artist').innerHTML = '';
-            //this code fetches tracks based on search terms and print to the console 
-        fetch('https://www.apitutor.org/spotify/simple/v1/search?type=artist&limit=1&q=' + term)
-        .then(response => response.json())
-        .then(
-            cards =>{
-                console.log(cards);
-                if (cards.length ===0){
-                    document.querySelector('#artist').innerHTML += 
-                         `<p> No artist found for ${term}</p>`
-                    
-                }
 
-                document.querySelector('#artist').innerHTML += `
-                <section id="artist">
-                        <section class="artist-card" id="3Nrfpe0tUJi4K4DXYWgMUX">
-                            <div>
-                                <img src=${cards[0].image_url}>
-                                <h2>BTS</h2>
-                                <div class="footer">
-                                    <a href="https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX" target="_blank">
-                                        view on spotify
-                                    </a>
-                                </div>
-                            </div>
-                        </section>
-                    </section>
-                `
-            
-            
-            
-            }
-
-        )
 
 };
 
@@ -107,6 +74,41 @@ const getArtist = (term) => {
         get artists from spotify based on the search term
         "${term}" and load the first artist into the #artist section 
         of the DOM...`);
+
+        document.querySelector('#artist').innerHTML = '';
+        //this code fetches tracks based on search terms and print to the console 
+    fetch('https://www.apitutor.org/spotify/simple/v1/search?type=artist&limit=1&q=' + term)
+    .then(response => response.json())
+    .then(
+        cards =>{
+            console.log(cards);
+            if (cards.length ===0){
+                document.querySelector('#artist').innerHTML += 
+                     `<p> No artist found for ${term}</p>`
+                
+            }
+
+            document.querySelector('#artist').innerHTML += `
+            <section id="artist">
+                    <section class="artist-card" id="3Nrfpe0tUJi4K4DXYWgMUX">
+                        <div>
+                            <img src=${cards[0].image_url}>
+                            <h2>BTS</h2>
+                            <div class="footer">
+                                <a href="https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX" target="_blank">
+                                    view on spotify
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            `
+        
+        
+        
+        }
+
+    )
 };
 
 const handleTrackClick = (ev) => {
