@@ -51,10 +51,12 @@ const showImage = (ev) => {
     const elem = ev.currentTarget;
     console.log(elem.style.backgroundImage);
     //console.log( elem);
-    currentIndex = parseInt(elem.dataset.index);
+   
     document.querySelector('.featured_image').style.backgroundImage = elem.style.backgroundImage;
     // your job: set the .featured_image's backgroundImage to the
     // element that was just clicked.
+
+    currentIndex = parseInt(elem.dataset.index); 
 };
 
 
