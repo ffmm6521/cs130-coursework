@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>personal website</title>
+    <script type="text/javascript" src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel ='stylesheet' media="screen and (max-width:1000px)" href="'tablet.css" >
+    <link rel ='stylesheet' media="screen and (max-width:830px)" href="phone.css" >
+
+  </head>
+  <body>
+      <nav class="navbar">
+
+        <ul>
+          <li> <a href = '#home'> Home</a></li>
+          <li> <a href = '#about'> About Me</a></li>
+          <li> <a href = '#gallery'> Gallery</a></li>
+          <li> <a href = '#skills'> Project </a></li>
+          <li> <a href = '#contact'> Contact Me</a></li>
+        </ul>
+      </nav>
+       
+      <section id="home">
+        <div class="main">
+          <h1 class="headings">
+            <br> I'M MIN FEI </h1>
+          </h1>
+          <a href="mailto:ffmm6521@gmail.com">
+            <button class="btn" href="">  Hire Me
+            </button>
+          </a>
+          
+          
+        </div>
+      </section>
+
+      <sectoin id="about">
+         
+        <h1 class="headings">ABOUT ME</h1>
+          <div id="pic">   
+           
+           <img src="background.jpg" alt = ''>
+           <div id="intro">
+             <h2>Min Fei</h2>
+             <p>
+              I am a second year master student in the IEMS department of Northwestern University. 
+              I will be graduating this Spring quarter and I'm actively seeking a job as a data analyst/data scientist.
+              I have two years of experience as a research assistant.
+
+              I am a cat lover. 
+             </p>
+           </div>
+         </div>
+      </sectoin>
+
+
+      <section id="gallery"> 
+        <h1 class=" headings">GALLERY</h1>
+        
+
+
+                      <div class="row">
+                        <div class="col">
+                          <img src="IMG1.JPG" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" alt="Toy car on the road." />
+                        </div>
+                        <div class="col">
+                          <img src="IMG2.JPG" onclick="openLightbox();toSlide(2)" class="hover-shadow preview" alt="Toy car exploring offroad." />
+                        </div>
+                        <div class="col">
+                          <img src="IMG3.JPG" onclick="openLightbox();toSlide(3)" class="hover-shadow preview"alt="Toy car in the city." />
+                        </div>
+                        <div class="col">
+                          <img src="IMG4.JPG"onclick="openLightbox();toSlide(4)" class="hover-shadow preview" alt="Toy car in the city." />
+                        </div>
+                        <div class="col">
+                          <img src="IMG5.JPG" onclick="openLightbox();toSlide(5)" class="hover-shadow preview"alt="Toy car in the city." />
+                        </div>
+                        <div class="col">
+                          <img src="IMG6.JPG" onclick="openLightbox();toSlide(6)" class="hover-shadow preview"alt="Toy car in the city." />
+                        </div>
+                        <div class="col">
+                          <img src="IMG7.JPG" onclick="openLightbox();toSlide(7)" class="hover-shadow preview"alt="Toy car in the city." />
+                        </div>
+                        <div class="col">
+                          <img src="IMG8.JPG" onclick="openLightbox();toSlide(8)" class="hover-shadow preview"alt="Toy car in the city." />
+                        </div>
+                        <div class="col">
+                          <img src="IMG9.JPG" onclick="openLightbox();toSlide(9)" class="hover-shadow preview"alt="Toy car in the city." />
+                        </div>
+                        <div class="col">
+                          <img src="IMG10.JPG" onclick="openLightbox();toSlide(10)" class="hover-shadow preview"alt="Toy car in the city." />
+                        </div>
+                        <div class="col">
+                          <img src="IMG11.JPG" onclick="openLightbox();toSlide(11)" class="hover-shadow preview"alt="Toy car in the city." />
+                        </div>
+                        <div class="col">
+                          <img src="IMG12.JPG" onclick="openLightbox();toSlide(12)" class="hover-shadow preview"alt="Toy car in the city." />
+                        </div>
+
+                      </div>
+
+                      
+                      <div id="Lightbox" class="modal">
+                        <span class="close pointer" onclick="closeLightbox()">&times;</span>
+                        <div class="modal-content">
+                          <div class="slide">
+                              <img src="IMG1.JPG" class="image-slide" alt="Toy car on the road." />
+                          </div>
+                          <div class="slide">
+                              <img src="IMG2.JPG" class="image-slide" alt="Toy car exploring offroad." />
+                          </div>    
+                          <div class="slide">
+                              <img src="IMG3.JPG" class="image-slide" alt="Toy car in the city." />
+                          </div>
+                          <div class="slide">
+                            <img src="IMG4.JPG" class="image-slide" alt="Toy car in the city." />
+                        </div>
+                        <div class="slide">
+                          <img src="IMG5.JPG" class="image-slide" alt="Toy car in the city." />
+                      </div>
+                      <div class="slide">
+                        <img src="IMG6.JPG" class="image-slide" alt="Toy car in the city." />
+                    </div>
+                    <div class="slide">
+                      <img src="IMG7.JPG" class="image-slide" alt="Toy car in the city." />
+                  </div>
+                  <div class="slide">
+                    <img src="IMG8.JPG" class="image-slide" alt="Toy car in the city." />
+                </div>
+                <div class="slide">
+                  <img src="IMG9.JPG" class="image-slide" alt="Toy car in the city." />
+              </div>
+              <div class="slide">
+                <img src="IMG10.JPG" class="image-slide" alt="Toy car in the city." />
+            </div>
+            <div class="slide">
+              <img src="IMG11.JPG" class="image-slide" alt="Toy car in the city." />
+          </div>
+          <div class="slide">
+            <img src="IMG12.JPG" class="image-slide" alt="Toy car in the city." />
+        </div>
+                        
+                          <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+                            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                          
+                            <div class="dots">
+                              <div class="col">
+                                <img src="IMG1.JPG" class="modal-preview hover-shadow" onclick="toSlide(1)" alt="Toy car on the road" />
+                              </div>
+                              <div class="col">
+                                <img src="IMG2.JPG" class="modal-preview hover-shadow" onclick="toSlide(2)" alt="Toy car exploring offroad." />
+                              </div>
+                              <div class="col">
+                                <img src="IMG3.JPG" class="modal-preview hover-shadow" onclick="toSlide(3)" alt="Toy car in the city." />
+                              </div>
+                              <div class="col">
+                                <img src="IMG4.JPG" class="modal-preview hover-shadow" onclick="toSlide(4)" alt="Toy car in the city." />
+                              </div>
+                              <div class="col">
+                                <img src="IMG5.JPG" class="modal-preview hover-shadow" onclick="toSlide(5)" alt="Toy car in the city." />
+                              </div>
+                              <div class="col">
+                                <img src="IMG6.JPG" class="modal-preview hover-shadow" onclick="toSlide(6)" alt="Toy car in the city." />
+                              </div>
+                              <div class="col">
+                                <img src="IMG7.JPG" class="modal-preview hover-shadow" onclick="toSlide(7)" alt="Toy car in the city." />
+                              </div>
+                              <div class="col">
+                                <img src="IMG8.JPG" class="modal-preview hover-shadow" onclick="toSlide(8)" alt="Toy car in the city." />
+                              </div>
+                              <div class="col">
+                                <img src="IMG9.JPG" class="modal-preview hover-shadow" onclick="toSlide(9)" alt="Toy car in the city." />
+                              </div>
+                              <div class="col">
+                                <img src="IMG10.JPG" class="modal-preview hover-shadow" onclick="toSlide(10)" alt="Toy car in the city." />
+                              </div>
+                              <div class="col">
+                                <img src="IMG11.JPG" class="modal-preview hover-shadow" onclick="toSlide(11)" alt="Toy car in the city." />
+                              </div>
+                              <div class="col">
+                                <img src="IMG12.JPG" class="modal-preview hover-shadow" onclick="toSlide(11)" alt="Toy car in the city." />
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+        
+      </section>
+
+      <section id="skills">
+        <h1 class="headings"> PROJECTS </h1>
+        <div class="row">
+          <div class="box">
+            <img src="bus.png" alt="">
+            <h1 class="headings">School Bus Scheduling</h1>
+            <p> 
+                  Cleaned and processed text & geo-location data in Python with Google Geocoding API, Networkx, Geopandas and etc.            
+                  Optimized bus stop locations, bus routing, and bus scheduling for more than 200 public schools in Denver. Implemented large-scale mixed integer programs in Gurobi solver.
+            </p>
+          </div>
+
+          <div class="box">
+            <img src="scrap.png" alt="">
+            <h1 class="headings">Web Scraping</h1>
+            <p> 
+              Built web crawlers to scrape 100K+ text data using Python Selenium, cleaned and stored data in MySQL.
+              Adopted techniques to bypass anti-scraping tools on the website, including dynamic IP rotation, automatic ‘CAPTCHA’
+              verification and utilizing headless browsers.
+            </p>
+
+          </div>
+
+          <div class="box">
+            <img src="officer.png" alt="">
+            <h1 class="headings"> Patrol Officer Scheduling </h1>
+            <p> 
+              Created weekly working schedules for 16 patrol officers, resulting a 25% improvement in response efficiency.
+              Analyzed and visualized call data from 200 schools collected in the past three years; Formulated a mixed integer program
+              to minimize total cost and solved it with Gurobi API in Python.
+              
+            </p>
+
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section id="contact">
+        <h1 class="headings"> CONTACT </h1>
+        <form action="" class="form">
+              <input type="text" name="name" class="input" placeholder="Enter Your Name">
+              <input type="text" name="email" class="input" placeholder="Enter Your Email">
+              <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+              <input type="submit" value="SEND" id="send">
+
+
+
+
+        </form>
+
+      </section>
+
+  </body>
+</html>
