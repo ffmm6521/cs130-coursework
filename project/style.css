@@ -51,7 +51,9 @@ body {
 
 }
 
-
+.btn{
+    margin: 20px;
+}
 #home{
     display: flex;
     flex-direction: column;
